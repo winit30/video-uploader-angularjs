@@ -1,0 +1,78 @@
+<div class="view view-main">
+	<div data-page="app" class="page">
+		<div class="page" ng-controller="MainController">
+			<!-- Top Navbar. In Material theme it should be inside of the page-->
+			<div class="panel-overlay"></div>
+			<div class="panel panel-left panel-cover">
+				<div class="list-block">
+				  <ul class="list-block">
+					<li class="logedin-user">
+						<a href="#">
+						  <div class="item-content">
+							<div class="item-media"><i class="icon icon-person-login"></i></div>
+							<div class="item-inner">{{data.name}}</div>
+						  </div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="close-panel"  ng-click="logout()">
+							<div class="item-content">
+								<div class="item-inner">Logout</div>
+							</div>	
+						</a>
+					</li>	
+				  </ul>
+				</div>
+			</div>
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="left"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+					<div class="center">Awesome App</div>
+				</div>
+			</div>
+
+			<!-- Toolbar. In Material theme it should be inside of the page-->
+			<div class="toolbar toolbar-bottom">
+				<div class="toolbar-inner">
+					<!-- Toolbar links -->
+					<a href="#" class="link">Link 1</a>
+					<a href="#" class="link">Link 2</a>
+				</div>
+			</div>
+
+			<!-- Scrollable page content -->
+			<div class="page-content" ng-controller="fileUploadCtrl">
+				<form class="list-block inputs-list"  method="post"  enctype="multipart/form-data">
+					<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-inner custom-file-input">
+									<input type="file" name="fileToUpload" file-model="myFile" id="fileToUpload" />
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner custom-file-input">
+									<input type="button" value="Upload Image" name="submit" ng-click="uploadFile()" >
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner custom-file-input">
+									<ul>
+										<li ng-repeat="img in imageData | reverse">
+										   <img ng-src="{{img.filename}}" width="200"/>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</form>
+			<!-- Link to another page -->
+			</div>
+		</div>
+	</div>
+</div>

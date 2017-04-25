@@ -1,0 +1,103 @@
+<div class="view view-main">
+	<div data-page="form" class="page">
+		<div class="page"   ng-controller="MainController" >
+			<!-- Top Navbar. In Material theme it should be inside of the page-->
+			<div class="panel-overlay"></div>
+			<div class="panel panel-left panel-cover">
+				<div class="list-block">
+				  <ul class="list-block">
+					<li class="logedin-user">
+						<a href="#">
+						  <div class="item-content">
+							<div class="item-media"><i class="icon icon-person-login"></i></div>
+							<div class="item-inner">{{data.name}}</div>
+						  </div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="close-panel"  ng-click="logout()">
+							<div class="item-content">
+								<div class="item-inner">Logout</div>
+							</div>	
+						</a>
+					</li>	
+				  </ul>
+				</div>
+			</div>
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="left"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+					<div class="center">Awesome App</div>
+				</div>
+			</div>
+
+				<!-- Scrollable page content -->
+				<div class="page-content" ng-controller="videoCtrl">
+					<form class="list-block inputs-list"  method="post"  enctype="multipart/form-data">
+						<ul>
+							<li>
+								<div class="item-content">
+									<div class="item-inner">
+										<div class="item-title floating-label">Recipient Email</div>
+										<div class="item-input item-input-field">
+											<input type="text" placeholder="" class="">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-content">
+									<div class="item-inner">
+										<div class="item-input item-input-field">
+											<input type="text" placeholder="Select date" readonly id="calendar-default">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-content">
+									<div class="item-inner custom-file-input">
+										<div class="item-title floating-label">&nbsp;</div>
+										<div class="item-input item-input-field">
+											<input type="file" name="fileToUpload" id="fileToUpload"  onchange="angular.element(this).scope().fileNameChanged()"/>
+											<p class="buttons-row">
+												<a href="#" class="button button-big button-fill button-raised color-pink  myevent">Select from gallary</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-content">
+									<div class="item-inner img_upload_cont">
+										<div class="item-input item-input-field" id="pullimage">
+
+										</div>
+										<div class="img_upload_btn" ng-show="isUpload"  ng-click="uploadFile()"></div>
+									</div>
+								</div>
+							</li>
+							
+							<li>
+								<div class="item-content">
+									<div class="item-inner custom-file-input">
+										<div class="progressbar  color-pink" >
+											<span id="bar"></span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-content">
+									<div class="item-inner custom-file-input">
+										<div id="image"></div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</form>
+				<!-- Link to another page -->
+				</div>
+		</div>
+	</div>
+</div>

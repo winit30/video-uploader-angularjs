@@ -1,0 +1,45 @@
+<div class="view view-main">
+	<div data-page="app" class="page">
+		<div class="page" ng-controller="MainController">
+			<!-- Top Navbar. In Material theme it should be inside of the page-->
+			<div class="panel-overlay"></div>
+			<div class="panel panel-left panel-cover">
+				<div class="list-block">
+				  <ul class="list-block">
+					<li class="logedin-user">
+						<a href="#">
+						  <div class="item-content">
+							<div class="item-media"><i class="icon icon-person-login"></i></div>
+							<div class="item-inner">{{data.name}}</div>
+						  </div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="close-panel"  ng-click="logout()">
+							<div class="item-content">
+								<div class="item-inner">Logout</div>
+							</div>	
+						</a>
+					</li>	
+				  </ul>
+				</div>
+			</div>
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="left"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+					<div class="center">Awesome App</div>
+				</div>
+			</div>
+
+		
+				<!-- Scrollable page content -->
+				<div class="page-content">
+					<div class="content-block upload_button_cont" >
+						<a href="views/form.html" class="upload_button"></a>
+						<p class="midium_text">Schedule Video</p>
+					</div>
+				<!-- Link to another page -->
+				</div>
+		</div>
+	</div>
+</div>

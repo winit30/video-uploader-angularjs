@@ -1,0 +1,37 @@
+<div class="view view-main">
+	<div data-page="login-screen" class="page no-navbar no-toolbar no-swipeback login-view">
+		<div class="page" ng-controller="LoginController">
+			<!-- page-content has additional login-screen content -->
+			<div class="page-content login-screen-content">
+				<div class="login-screen-title"><img src="img/c.svg" class="icon-logo"/></div>
+				<!-- Login form -->
+				<form>
+					<div class="list-block inputs-list">
+						<ul>
+							<li class="item-content">
+								<div class="item-inner">
+									<div class="item-input item-input-field">
+										<input type="text" name="username" placeholder="Your email" class="" ng-model="loginInfo.email">
+									</div>
+								</div>
+							</li>
+							<li class="item-content">
+							<div class="item-inner">
+								<div class="item-input item-input-field">
+									<input type="password" name="password" placeholder="Your password" class="" ng-model="loginInfo.password">
+								</div>
+							</div>
+							</li>
+						</ul>
+					</div>
+					<div class="content-block"><a href="#" class="button button-big login-btn" ng-click="loginUser()">Log In</a></div>
+					<div class="content-block text-center">Or</div>
+					<div class="content-block"><a href="#" class="button button-big facebook-btn">Login with Facebook</a></div>
+					<div class="content-block">
+						<div class="list-block-label">Don't have an account yet? <a href="views/signup.html">Sign Up</a></div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

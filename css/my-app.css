@@ -1,0 +1,130 @@
+.app {
+	display:none;
+}
+
+.login-facebook img {
+	max-width:100%;
+}
+
+.login-view .page{
+		background-image:url('../img/bg.jpg');
+		background-color:transparent !important;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+}
+
+.login-screen-content {
+	background-color:rgba(0, 77,64, 0.70) !important;
+}
+
+.facebook-btn {
+	background:#0091ea;
+	color:#fff;
+
+}
+
+.icon-logo {
+	width: 90px;
+    height: auto;
+    margin-top: 16px;
+}
+
+a {color:#fff !important;}
+
+
+.theme-teal .picker-footer .button:not(.button-fill) {
+    color: #009688 !important;
+}
+
+.text-center {
+	text-align:center;
+}
+
+.login-btn {
+	background: #64ffda;
+    color: #000 !important;
+}
+
+input {
+	font-weight:300;
+	letter-spacing:0.6px;
+}
+
+.progressbar span {
+    content: '';
+    width:0;
+    background: #2196f3;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform: translate3d(0,0,0) !important;
+    transform: translate3d(0,0,0) !important;
+    -webkit-transition-duration: 150ms;
+    transition-duration: 150ms;
+}
+
+.custom-file-input input[type="file"]{
+	width: 100%;
+    height: 50px;
+    background-color: #000;
+    position: absolute;
+    z-index: 9;
+    opacity: 0;
+}
+
+.upload_button_cont {
+	text-align:center;
+}
+
+.upload_button {
+	background-image: url(../icons/videocam.svg);
+    width: 180px;
+    height: 180px;
+    background-size: 70% auto !important;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 100px;
+	-webkit-border-radius: 100px;
+    background-color: #EF5350;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#pullimage {
+	overflow:hidden;
+}
+
+.img_upload_cont {
+	position:relative;
+}
+
+.img_upload_cont .img_upload_btn {
+	background-image: url(../icons/send_icon.svg);
+	width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #e91e63;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -16px;
+    right: 0;
+    margin: auto;
+	background-repeat: no-repeat;
+    background-size: 60% auto;
+    background-position: center center;
+}
+
+#pullimage img{
+	width:100%;
+	border:5px solid #009688;
+	box-sizing: border-box;
+}
+
+.upload_button_cont .midium_text {
+	font-size:34px;
+	margin-top:70px;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html ng-app="projectApp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+	<meta http-equiv="Content-Security-Policy" content=" style-src 'self' 'unsafe-inline';  script-src 'self' 'unsafe-inline' 'unsafe-eval'; media-src *">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+	<link rel="stylesheet" href="css/framework7.material.min.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="css/my-app.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>App</title>
+</head>
+
+<body class="framework7-root theme-teal layout-dark">
+    <div class="app">
+        <h1>PhoneGap</h1>
+        <div id="deviceready" class="blink">
+            <p class="event listening">Connecting to Device</p>
+            <p class="event received">Device is Ready</p>
+        </div>
+    </div>
+	  <!-- Views -->
+  <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-fixed toolbar-fixed">
+			
+			
+			<div data-page="index" class="page">
+				<div class="page" ng-controller="checkTokenController">
+				
+				</div>
+			</div>
+        </div>
+      </div>
+	</div>
+ <!-- Views -->  
+	<script type="text/javascript" src="js/framework7.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/my-app.js"></script>
+	<script type="text/javascript" src="lib/angular.min.js"></script>
+	<script type="text/javascript" src="js/controllers/authentication-controller.js"></script>
+	<script type="text/javascript" src="js/controllers/video-controller.js"></script>
+	<script type="text/javascript" src="js/services/authentication-service.js"></script>
+	<script type="text/javascript" src="js/services/fileupload-service.js"></script>
+	<script type="text/javascript" src="js/services/video-service.js"></script>
+   
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<div class="view view-main">
+	<div data-page="signup-screen" class="page no-navbar no-toolbar no-swipeback login-view">
+		<div class="page" ng-controller="SignupController">
+			<!-- page-content has additional login-screen content -->
+			<div class="page-content login-screen-content">
+				<div class="login-screen-title"><img src="img/c.svg" class="icon-logo"/></div>
+				<!-- Login form -->
+				<form>
+					<div class="list-block inputs-list">
+						<ul>
+							<li class="item-content">
+								<div class="item-inner">
+									<div class="item-input item-input-field">
+										<input type="text" name="username" placeholder="Username" class="" ng-model="signUpInfo.name">
+									</div>
+								</div>
+							</li>
+							<li class="item-content">
+								<div class="item-inner">
+									<div class="item-input item-input-field">
+										<input type="text" name="email" placeholder="Email" class="" ng-model="signUpInfo.email">
+									</div>
+								</div>
+							</li>
+							<li class="item-content">
+								<div class="item-inner">
+									<div class="item-input item-input-field">
+										<input type="text" name="phone" placeholder="Phone" class="" ng-model="signUpInfo.phone">
+									</div>
+								</div>
+							</li>
+							<li class="item-content">
+							<div class="item-inner">
+								<div class="item-input item-input-field">
+									<input type="password" name="password" placeholder="Password" class="" ng-model="signUpInfo.password">
+								</div>
+							</div>
+							</li>
+						</ul>
+					</div>
+					<div class="content-block"><a href="#" class="button button-big login-btn" ng-click="signUserUp()">Sign Up</a></div>
+					<div class="content-block">
+						<div class="list-block-label">Already have an account? <a href="views/login-screen.html">Login</a></div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
